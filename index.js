@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NzQxMDYxNTA2NjAyMzY5MTE1.XyyFTw.CfrBCEVX39oq8SnuzSXuax4V4fc';
+const token = 'TOKEN_TOKEN';
 
 bot.once('ready', () => {
 	console.log('El bot bardeador ya esta activo!');
