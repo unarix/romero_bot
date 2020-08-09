@@ -3,6 +3,19 @@ const bot = new Discord.Client();
 
 const token = '';
 
+const http = require('http');
+const port = process.env.PORT || 3000
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('<h1>Bot Bardeador running!/h1>');
+});
+
+server.listen(port,() => {
+  console.log(`Server running at port `+port);
+});
+
 bot.once('ready', () => {
 	console.log('El bot bardeador ya esta activo!');
 });
