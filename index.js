@@ -16,7 +16,7 @@ let s3 = new aws.S3({
   accessKeyId: process.env.DISCO_KEY,
 });
 
-console.log(s3.config.accessKeyId);
+console.log("La key esta seteada a: " + s3.config.accessKeyId);
 
 const token = s3.config.accessKeyId;
 
