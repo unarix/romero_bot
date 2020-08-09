@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'TOKEN_TOKEN';
+const token = '';
 
 bot.once('ready', () => {
 	console.log('El bot bardeador ya esta activo!');
@@ -20,18 +20,35 @@ bot.on('message', async message => {
         const args = message.content;//.slice(prefix.length).trim().split(' ');
         const msg = args.toLowerCase();//.shift().toLowerCase();
 
-        if (msg.includes('hola') || msg.includes('buenas')){
+        if (msg.includes('hola') || msg.includes('buenas') || msg.includes('como va')) {
             return message.channel.send(`${message.author}, que saludas la concha de tu madre?`);
         }
         if (msg.includes('como andan'|| msg.includes('como andas'))){
             return message.channel.send(`${message.author}, que te importa gorreado del orto!`);
         }
-        else if (msg === 'info') {
-            message.channel.send(`Este grupo del orto se llama : ${message.guild.name}\n y ustedes son ${message.guild.memberCount} forros`);
+        if (msg.includes('viernes')){
+            return message.channel.send(`${message.author}, el viernes es de counter y tu vieja es de culo abierto!`);
+        }
+        if (msg.includes('abrazo')){
+            return message.channel.send(`${message.author}, abrazate a esta pija, gorreado`);
+        }
+        if (msg.includes('romero')){
+            return message.channel.send(`${message.author}, toca de aca, con giles no hablo`);
+        }
+        else if (msg.includes('amiguitos') || msg.includes('buenas')) {
+            message.channel.send(`tu viejo es amigo de esta verga, gil`);
+        }
+        else if (msg.includes('bot')) {
+            message.channel.send(`en malvinas perdi las dos piernas y me quedo solo la del medio`);
+        }
+        else if (msg.includes('gente')) {
+            message.channel.send(`tu abuela me chupaba la pija mientras tu abuelo miraba... alto chaqueta tu abuelo`);
+        }
+        else if (msg.includes('orto')) {
+            message.channel.send(`por el orto es como le gusta a tu vieja... puto`);
         }
         else if (msg === 'cantar') {
             await message.channel.send('Colocao');
-            console.log('Colocao');
             await sleep(1000);console.log('.');
             await message.channel.send('como Drake');
             await sleep(1000);console.log('.');
