@@ -16,7 +16,9 @@ let s3 = new aws.S3({
   accessKey: process.env.KEY,
 });
 
-const token = s3.accessKey;
+console.log(s3);
+
+const token = s3.config.accessKey;
 
 server.listen(port,() => {
   console.log(`Server running at port `+port);
