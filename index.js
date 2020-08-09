@@ -13,12 +13,12 @@ const server = http.createServer((req, res) => {
 const aws = require('aws-sdk');
 
 let s3 = new aws.S3({
-  accessKey: process.env.KEY,
+  accessKeyId: process.env.DISCO_KEY,
 });
 
-console.log(s3);
+console.log(s3.config.accessKeyId);
 
-const token = s3.config.accessKey;
+const token = s3.config.accessKeyId;
 
 server.listen(port,() => {
   console.log(`Server running at port `+port);
