@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   res.end('<h1>Bot Bardeador running!</h1>');
 });
 
-require('/app/config.js');
+require('./config.js');
 
 // const aws = require('aws-sdk');
 
