@@ -1,4 +1,4 @@
-# Romero Bot
+# Romero Bot (Discord)
 
 ## Who is romero?
 
