@@ -90,6 +90,15 @@ bot.on('message', async message => {
         else if (msg.includes('chiste')) {
             return message.channel.send(`Qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!`);
         }
+        else if (msg.includes('piola')) {
+            return message.channel.send(`Veni y tira de esta piola, gil!`);
+        }
+        else if (msg.includes('insoportable')) {
+            return message.channel.send(`tu vieja me ama!`);
+        }
+        else if (msg.includes('mapa')) {
+            return message.channel.send(`aca tengo un mapa que te lleva directo a mi chota!`);
+        }
         else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
             await sleep(1000);console.log('.');
