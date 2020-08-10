@@ -1,16 +1,16 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
 const http = require('http');
 const port = process.env.PORT || 3000
 
+/* Seteo el sever */
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  res.end('<h1>Bot Bardeador running!</h1> <p>Add me with the CLIENT ID: 741061506602369115<p>');
+  res.end('<center><br><h1>Romero is running!</h1> <p>Add me with the CLIENT ID: 741061506602369115<p></center>');
 });
 
-
+/* despierto a aws para obtener las variables de entorno */
 const aws = require('aws-sdk');
 
 let s3 = new aws.S3({
@@ -29,11 +29,13 @@ bot.once('ready', () => {
 	console.log('El bot bardeador ya esta activo!');
 });
 
+/* Esta funcion pone a dormir el proceso actual por x milisegundos */
 function sleep(ms) {
     console.log(ms);
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+/* cuando recibo un mensaje, me fijo que debo responder */ 
 bot.on('message', async message => {
     // Si el mensaje proviene del bot, return.
     if (message.author.bot) return;
