@@ -10,15 +10,17 @@ const server = http.createServer((req, res) => {
   res.end('<h1>Bot Bardeador running!</h1>');
 });
 
-const aws = require('aws-sdk');
+require('./config.js');
 
-let s3 = new aws.S3({
-  accessKeyId: process.env.DISCO_KEY,
-});
+// const aws = require('aws-sdk');
 
-console.log("La key esta seteada a: " + s3.accessKeyId);
+// let s3 = new aws.S3({
+//   accessKeyId: process.env.DISCO_KEY,
+// });
 
-const token = s3.accessKeyId;
+// console.log("La key esta seteada a: " + s3.config.accessKeyId);
+
+const token = process.env.DISCO_KEY;
 
 server.listen(port,() => {
   console.log(`Server running at port `+port);
