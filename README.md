@@ -17,16 +17,19 @@ Romero bot its made in node.js, runs under heroku node dyno: https://romero-bot.
 **Run:**
 >$ node .
 
-**Run with heroku:**
->$ heroku local
+**Install heroku cli**
+>$ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 **Heroku login:**
->$ heroku config -a romero-bot
+>$ heroku login
+
+**Run with heroku:**
+>$ heroku local
 
 **Get logs:**
 >$ heroku logs --tail -a **romero-bot**
 
-**Create env file:**
+**Create env file (configure DISCO_KEY setting first):**
 >$ heroku config:get DISCO_KEY -s -a romero-bot  >> .env
 
 **Get heroku config**
