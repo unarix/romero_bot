@@ -12,8 +12,18 @@ Romero is a typical troublemaker, and that is why I made a bot in his honor.
 
 Romero bot its made in node.js, runs under heroku node dyno: https://romero-bot.herokuapp.com/
 
+## How to run:
+
+> node .
+
+## Screenshot:
 
 
+![alt text](https://raw.githubusercontent.com/unarix/romero-bot/master/screenshot.png?raw=true)
 
+
+## CLient ID:
+
+To add the bot to your discord server use the client id: 741061506602369115
 
 

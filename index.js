@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
   res.end('<h1>Bot Bardeador running!</h1>');
+  res.end('<h2>CLIENT ID: 741061506602369115<h2>')
 });
 
 
