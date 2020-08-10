@@ -42,23 +42,23 @@ bot.on('message', async message => {
         const args = message.content;//.slice(prefix.length).trim().split(' ');
         const msg = args.toLowerCase();//.shift().toLowerCase();
 
-        if (msg.includes('hola') || msg.includes('buenas') || msg.includes('como va')) {
+        if (msg.includes('hola') || msg.includes('buenas')) {
             return message.channel.send(`${message.author}, que saludas la concha de tu madre?`);
         }
-        else if  (msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
+        else if  (msg.includes('como va') || msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
             return message.channel.send(`${message.author}, que te importa gorreado del orto!`);
         }
+        else if  (msg.includes('que onda')){
+            return message.channel.send(`${message.author}, que onda con que? bobo...`);
+        }
         else if  (msg.includes('viernes')){
-            return message.channel.send(`${message.author}, el viernes es de counter y tu vieja es de culo abierto!`);
+            return message.channel.send(`${message.author}, el viernes es de counter... y tu vieja es de culo abierto!`);
         }
         else if  (msg.includes('abrazo')){
             return message.channel.send(`${message.author}, abrazate a esta pija, gorreado`);
         }
         else if  (msg.includes('romero')){
             return message.channel.send(`${message.author}, toca de aca, con giles no hablo`);
-        }
-        else if  (msg.includes('que onda')){
-            return message.channel.send(`${message.author}, que onda con que? bobo...`);
         }
         else if  (msg.includes('agresivo')){
             return message.channel.send(`${message.author}, tu vieja es agresiva con mi chota puto`);
