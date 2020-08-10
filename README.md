@@ -19,7 +19,7 @@ Romero bot its made in node.js, runs under heroku node dyno: https://romero-bot.
 ## Screenshot:
 
 
-![alt text](https://raw.githubusercontent.com/unarix/romero-bot/master/screenshot.png?raw=true)
+![alt text](https://raw.githubusercontent.com/unarix/romero_bot/master/screenshot.png?raw=true)
 
 
 ## CLient ID:
