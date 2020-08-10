@@ -12,12 +12,27 @@ Romero is a typical troublemaker, and that is why I made a bot in his honor.
 
 Romero bot its made in node.js, runs under heroku node dyno: https://romero-bot.herokuapp.com/
 
-## How to run:
+## How to:
 
-> node .
+**Run:**
+>$ node .
+
+**Run with heroku:**
+>$ heroku local
+
+**Heroku login:**
+>$ heroku config -a romero-bot
+
+**Get logs:**
+>$ heroku logs --tail -a **romero-bot**
+
+**Create env file:**
+>$ heroku config:get DISCO_KEY -s -a romero-bot  >> .env
+
+**Get heroku config**
+>$ heroku config -a romero-bot
 
 ## Screenshot:
-
 
 ![alt text](https://raw.githubusercontent.com/unarix/romero_bot/master/screenshot.png?raw=true)
 
