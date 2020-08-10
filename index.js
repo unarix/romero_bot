@@ -45,7 +45,7 @@ bot.on('message', async message => {
         if (msg.includes('hola') || msg.includes('buenas') || msg.includes('como va')) {
             return message.channel.send(`${message.author}, que saludas la concha de tu madre?`);
         }
-        if (msg.includes('como andan'|| msg.includes('como andas'))){
+        if (msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
             return message.channel.send(`${message.author}, que te importa gorreado del orto!`);
         }
         if (msg.includes('viernes')){
@@ -57,11 +57,20 @@ bot.on('message', async message => {
         if (msg.includes('romero')){
             return message.channel.send(`${message.author}, toca de aca, con giles no hablo`);
         }
+        if (msg.includes('que onda')){
+            return message.channel.send(`${message.author}, que onda con que? bobo...`);
+        }
+        if (msg.includes('agresivo')){
+            return message.channel.send(`${message.author}, tu vieja es agresiva con mi chota puto`);
+        }
+        if (msg.includes('agresivo')){
+            return message.channel.send(`${message.author}, tu vieja es agresiva con mi chota puto`);
+        }
         else if (msg.includes('amiguitos') || msg.includes('buenas')) {
             message.channel.send(`tu viejo es amigo de esta verga, gil`);
         }
-        else if (msg.includes('bot')) {
-            message.channel.send(`en malvinas perdi las dos piernas y me quedo solo la del medio`);
+        else if (msg.includes('romerito')) {
+            message.channel.send(`que te pasa pelotudo`);
         }
         else if (msg.includes('gente')) {
             message.channel.send(`tu abuela me chupaba la pija mientras tu abuelo miraba... alto chaqueta tu abuelo`);
@@ -69,7 +78,7 @@ bot.on('message', async message => {
         else if (msg.includes('orto')) {
             message.channel.send(`por el orto es como le gusta a tu vieja... puto`);
         }
-        else if (msg === 'cantar') {
+        else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
             await sleep(1000);console.log('.');
             await message.channel.send('como Drake');
