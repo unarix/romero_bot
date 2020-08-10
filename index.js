@@ -42,10 +42,11 @@ bot.on('message', async message => {
         const args = message.content;//.slice(prefix.length).trim().split(' ');
         const msg = args.toLowerCase();//.shift().toLowerCase();
 
-        if (msg.includes('hola') || msg.includes('buenas')) {
+        if (msg.includes('hola') || msg.includes('buenas')
+        ) {
             return message.channel.send(`${message.author}, que saludas la concha de tu madre?`);
         }
-        else if  (msg.includes('como va') || msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
+        else if  (msg.includes('como va') || msg.includes('como andan') || msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan')){
             return message.channel.send(`${message.author}, que te importa gorreado del orto!`);
         }
         else if  (msg.includes('que onda')){
