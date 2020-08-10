@@ -102,6 +102,9 @@ bot.on('message', async message => {
         else if (msg.includes('jaja')) {
             return message.channel.send(`${message.author}, de que reís bobo`);
         }
+        else if (msg.includes('hablar') || msg.includes('habla')) {
+            return message.channel.send(`${message.author}, habla con tu novia y preguntale cuanto me mide`);
+        }
         else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
             await sleep(1000);console.log('.');
