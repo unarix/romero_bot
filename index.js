@@ -16,9 +16,9 @@ let s3 = new aws.S3({
   accessKeyId: process.env.DISCO_KEY,
 });
 
-console.log("La key esta seteada a: " + s3.config.accessKeyId);
+console.log("La key esta seteada a: " + s3.accessKeyId);
 
-const token = s3.config.accessKeyId;
+const token = s3.accessKeyId;
 
 server.listen(port,() => {
   console.log(`Server running at port `+port);
