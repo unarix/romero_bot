@@ -45,25 +45,22 @@ bot.on('message', async message => {
         if (msg.includes('hola') || msg.includes('buenas') || msg.includes('como va')) {
             return message.channel.send(`${message.author}, que saludas la concha de tu madre?`);
         }
-        if (msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
+        else if  (msg.includes('como andan'|| msg.includes('como andas') || msg.includes('como están') || msg.includes('como estan'))){
             return message.channel.send(`${message.author}, que te importa gorreado del orto!`);
         }
-        if (msg.includes('viernes')){
+        else if  (msg.includes('viernes')){
             return message.channel.send(`${message.author}, el viernes es de counter y tu vieja es de culo abierto!`);
         }
-        if (msg.includes('abrazo')){
+        else if  (msg.includes('abrazo')){
             return message.channel.send(`${message.author}, abrazate a esta pija, gorreado`);
         }
-        if (msg.includes('romero')){
+        else if  (msg.includes('romero')){
             return message.channel.send(`${message.author}, toca de aca, con giles no hablo`);
         }
-        if (msg.includes('que onda')){
+        else if  (msg.includes('que onda')){
             return message.channel.send(`${message.author}, que onda con que? bobo...`);
         }
-        if (msg.includes('agresivo')){
-            return message.channel.send(`${message.author}, tu vieja es agresiva con mi chota puto`);
-        }
-        if (msg.includes('agresivo')){
+        else if  (msg.includes('agresivo')){
             return message.channel.send(`${message.author}, tu vieja es agresiva con mi chota puto`);
         }
         else if (msg.includes('amiguitos') || msg.includes('buenas')) {
@@ -73,10 +70,22 @@ bot.on('message', async message => {
             message.channel.send(`que te pasa pelotudo`);
         }
         else if (msg.includes('gente')) {
-            message.channel.send(`tu abuela me chupaba la pija mientras tu abuelo miraba... alto chaqueta tu abuelo`);
+            message.channel.send(`${message.author}, tu abuela me chupaba la pija mientras tu abuelo miraba... alto chaqueta tu abuelo`);
         }
         else if (msg.includes('orto')) {
-            message.channel.send(`por el orto es como le gusta a tu vieja... puto`);
+            message.channel.send(`${message.author}, por el orto es como le gusta a tu vieja... puto`);
+        }
+        else if (msg.includes('cucaracha')) {
+            message.channel.send(`${message.author}, la cucaracha la cucaracha... porque no te vas a lavar el orto`);
+        }
+        else if (msg.includes('mama')) {
+            return message.channel.send(`${message.author}, tu vieja me encanta... `);
+        }
+        else if (msg.includes('hdp')) {
+            return message.channel.send(`${message.author}, anda bajando un cambio... o te voy a tener que llenar la cara de puntasos`);
+        }
+        else if (msg.includes('chiste')) {
+            return message.channel.send(`Qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!`);
         }
         else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
