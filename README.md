@@ -22,7 +22,7 @@ Romero bot its made in node.js, runs under heroku node dyno: https://romero-bot.
 ![alt text](https://raw.githubusercontent.com/unarix/romero_bot/master/screenshot.png?raw=true)
 
 
-## CLient ID:
+## Client ID:
 
 To add the bot to your discord server use the client id: 741061506602369115
 
