@@ -10,15 +10,15 @@ const server = http.createServer((req, res) => {
   res.end('<h1>Bot Bardeador running!</h1>');
 });
 
-require('./config.js');
+//require('./config.js');
 
-// const aws = require('aws-sdk');
+const aws = require('aws-sdk');
 
-// let s3 = new aws.S3({
-//   accessKeyId: process.env.DISCO_KEY,
-// });
+let s3 = new aws.S3({
+  accessKeyId: process.env.DISCO_KEY,
+});
 
-// console.log("La key esta seteada a: " + s3.config.accessKeyId);
+console.log("La key esta seteada a: " + s3.config.accessKeyId);
 
 const token = process.env.DISCO_KEY;
 
