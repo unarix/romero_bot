@@ -99,6 +99,9 @@ bot.on('message', async message => {
         else if (msg.includes('mapa')) {
             return message.channel.send(`aca tengo un mapa que te lleva directo a mi chota!`);
         }
+        else if (msg.includes('jaja')) {
+            return message.channel.send(`${message.author}, de que reís bobo`);
+        }
         else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
             await sleep(1000);console.log('.');
