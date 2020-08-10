@@ -105,6 +105,9 @@ bot.on('message', async message => {
         else if (msg.includes('hablar') || msg.includes('habla')) {
             return message.channel.send(`${message.author}, habla con tu novia y preguntale cuanto me mide`);
         }
+        else if (msg.includes('juega') || msg.includes('jugar')|| msg.includes('juego')) {
+            return message.channel.send(`${message.author}, hmmm alguien tiene ganas de jugar con algo...`);
+        }
         else if (msg.includes('cantar')) {
             await message.channel.send('Colocao');
             await sleep(1000);console.log('.');
