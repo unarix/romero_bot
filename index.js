@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const response = require('response.js');
+const response = require('./response.js');
 const bot = new Discord.Client();
 const http = require('http');
 const port = process.env.PORT || 3000
