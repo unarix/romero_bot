@@ -2,7 +2,10 @@ var incomingMsg = {
     msg: [
         {
             words: ["hola", "buenas", "buenas noches", "holis"],
-            response: ["que saludas la concha de tu madre?"]
+            response: [
+                "que saludas la concha de tu madre?",
+                ""
+            ]
         },
         {
             words: ["como va", "como andan", "como andas", "como estan", "que cuentan"],
@@ -22,10 +25,20 @@ var incomingMsg = {
         },
         {
             words: ["romero", "romerito", "romerin", "rome"],
-            response: ["toca de aca, con giles no hablo"]
+            response: [
+                "toca de aca, con giles no hablo",
+                "que queres salame? No molestes",
+                "otra vez vos gil? Que parte de no molestar no entendes?",
+                "que pasó? Me estaba garchando a tu vieja y me cortaste el polvaso",
+                "que? Como? Me estaba re chacoteando ameo",
+                "uhhh dejá de molestar denso",
+                "banca que termino de cascotear a la fede y ya te atiendo",
+                "me estan llamando para ir a plaza de mayo?",
+                "me nombras una vez mas y te rompo todo el rancho"
+            ]
         },
         {
-            words: ["agresivo"],
+            words: ["agresivo","agresiva","malo"],
             response: ["tu vieja es agresiva con mi chota puto"]
         },
         {
@@ -49,21 +62,28 @@ var incomingMsg = {
             response: ["tu vieja me encanta..."]
         },
         {
-            words: ["hdp"],
-            response: ["anda bajando un cambio... o te voy a tener que llenar la cara de puntasos"]
+            words: ["hdp","puto","gil","salame","tarado","imbecil", ],
+            response: [
+                "anda bajando un cambio... o te voy a tener que llenar la cara de puntasos",
+                "ehh que zarpadito que estas ehh",
+                "uhhh ta re loco este chabon",
+                "aguantaaaaa",
+                "uuuhh man alta llanta alta llanta",
+                "ke loko eke kabon kakakaka"
+            ]
         },
         {
             words: ["chiste"],
             response: [
-                "Qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
-                "Que hace un africano en una montaña nevada? Un punto negro",
-                "El veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
-                "Usted sabe porque a los negros les hacen agujeros en el ataud? Para que los gusanos salgan a vomitar",
-                "A que se parece un negro con granos? A un Ferrero Rocher",
-                "Sabe que tiene una rubia contra los forros? Los labios",
-                "Una rubia acompaña a su hija al ginecólogo y este le dice, mire señora el clitoris de su hija está como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
-                "Hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",
-                "Que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio la enciende"
+                "qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
+                "que hace un africano en una montaña nevada? Un punto negro",
+                "el veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
+                "usted sabe porque a los negros les hacen agujeros en el ataud? Para que los gusanos salgan a vomitar",
+                "a que se parece un negro con granos? A un Ferrero Rocher",
+                "sabe que tiene una rubia contra los forros? Los labios",
+                "una rubia acompaña a su hija al ginecólogo y este le dice, mire señora el clitoris de su hija está como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
+                "hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",
+                "que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio, la enciende"
             ]
         },
         {
@@ -93,20 +113,19 @@ var incomingMsg = {
     ]
 };
 
+module.exports = {
+    troll: function(msg, author)
+    {
+        try {
+            var obj = null;
 
-function troll(msg, author)
-{
-    try {
-        var obj = null;
+            // find coincidences
+            for (var i = 0; i < this.incomingMsg.msg.length; i++)
+                if (this.incomingMsg.msg[i].words.includes(msg))
+                    obj = this.incomingMsg.msg[i];
 
-        // find coincidences
-        for (var i = 0; i < this.incomingMsg.msg.length; i++) {
-            if (this.incomingMsg.msg[i].words.includes(msg))
-                obj = this.incomingMsg.msg[i];
-        }
-
-        // get random response
-        return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
-
-    } catch (e) { console.log(e); }
-}
+            // get random response
+            return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
+        } catch (e) { console.log(e); }
+    }
+};
