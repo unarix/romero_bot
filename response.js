@@ -126,6 +126,6 @@ module.exports = {
 
             // get random response
             return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
-        } catch (e) { console.log(e); }
+        } catch (e) { throw e; }
     }
 };
