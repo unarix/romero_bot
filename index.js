@@ -238,7 +238,10 @@ bot.on('message', async message => {
 
                 break;
             default:
-                message.channel.send(response.troll(msg, message.author));
+                {
+                    message.channel.send("Entro en el case del chiste");
+                    message.channel.send(response.troll(msg, message.author));
+                }
         }
 
     } catch (error) {
