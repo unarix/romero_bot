@@ -238,7 +238,7 @@ bot.on('message', async message => {
 
                 break;
             default:
-                message.channel.send(troll(msg, message.author));
+                message.channel.send(response.troll(msg, message.author));
         }
 
     } catch (error) {
