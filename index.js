@@ -1,5 +1,8 @@
+/* requires */
 const Discord = require('discord.js');
-const response = require('./response.js');
+const mtroll = require('./troll.js'); //troll module
+
+/* configs */
 const bot = new Discord.Client();
 const http = require('http');
 const port = process.env.PORT || 3000
@@ -238,10 +241,7 @@ bot.on('message', async message => {
 
                 break;
             default:
-                {
-                    message.channel.send("Entro en el case del chiste");
-                    message.channel.send(response.troll(msg, message.author));
-                }
+                    message.channel.send(mtroll.get(msg, message.author));
         }
 
     } catch (error) {

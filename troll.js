@@ -114,15 +114,14 @@ var incomingMsg = {
 };
 
 module.exports = {
-    troll: function(msg, author)
-    {
+    get: function (msg, author) {
         try {
             var obj = null;
 
             // find coincidences
-            for (var i = 0; i < this.incomingMsg.msg.length; i++)
-                if (this.incomingMsg.msg[i].words.includes(msg))
-                    obj = this.incomingMsg.msg[i];
+            for (var i = 0; i < incomingMsg.msg.length; i++)
+                if (incomingMsg.msg[i].words.includes(msg))
+                    obj = incomingMsg.msg[i];
 
             // get random response
             return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
