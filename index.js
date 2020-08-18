@@ -68,7 +68,7 @@ bot.on('message', async message => {
                     message.channel.send(msing.help());
                 else {
                     // write song
-                    var lyric = msing.sing(msg);
+                    var lyric = msing.sing(msg.substring(6, msg.length));
                     for (var i = 0; i < lyric.length; i++) {
                         await message.channel.send(lyric[i].phrase);
                         await sleep(parseInt(lyric[i].wait));

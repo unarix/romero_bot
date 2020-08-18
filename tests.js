@@ -24,9 +24,8 @@ const writeSong = async (lyric) => {
             console.log(await write(lyric[i].phrase, lyric[i].wait));
     } catch (e) { throw e; }
 }
-writeSong(msing.sing("Colocao"));
-
-
+var msg = "!sing Colocao";
+writeSong(msing.sing(msg.substring(6, msg.length)));
 
 
 /* wait input to exit */

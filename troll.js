@@ -75,10 +75,7 @@ var incomingMsg = {
             words: ["chiste"],
             response: [
                 "qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
-                "que hace un africano en una montaña nevada? Un punto negro",
                 "el veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
-                "usted sabe porque a los negros les hacen agujeros en el ataud? Para que los gusanos salgan a vomitar",
-                "a que se parece un negro con granos? A un Ferrero Rocher",
                 "sabe que tiene una rubia contra los forros? Los labios",
                 "una rubia acompaña a su hija al ginecólogo y este le dice, mire señora el clitoris de su hija está como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
                 "hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",

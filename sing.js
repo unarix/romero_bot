@@ -54,12 +54,12 @@ module.exports = {
             var collection = '';
             for (var i = 0; i < songs.length; i++) {
                 var song = songs[i];
-                collection += `Name: ${song.name} (Released in ${song.year})<br>Artist: ${song.artist}<br>Song: ${song.musicsrc}<br>Video: ${song.videosrc}`;
+                collection += `Name: ${song.name} (Released in ${song.year})\nArtist: ${song.artist}\nSong: ${song.musicsrc}\nVideo: ${song.videosrc}`;
             }
             return collection;
         } catch (e) { throw e; }
     },
-    sing: async function (name) {
+    sing: function (name) {
         try {
             var lyric = [];
             var song = songs.find(x => x.name == name);
@@ -70,6 +70,7 @@ module.exports = {
                     lyric.push(chorus[x]);
                 }
             }
+            return lyric;
 
             //// write song
             //for (var i = 0; i < lyric.length; i++) {
