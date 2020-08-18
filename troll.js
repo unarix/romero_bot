@@ -3,8 +3,7 @@ var incomingMsg = {
         {
             words: ["hola", "buenas", "buenas noches", "holis"],
             response: [
-                "que saludas la concha de tu madre?",
-                ""
+                "que saludas la concha de tu madre?"
             ]
         },
         {
@@ -119,11 +118,17 @@ module.exports = {
             var obj = null;
 
             // find coincidences
+            exit_loops:
             for (var i = 0; i < incomingMsg.msg.length; i++)
-                if (incomingMsg.msg[i].words.includes(msg))
-                    obj = incomingMsg.msg[i];
+                for (var x = 0; x < incomingMsg.msg[i].words.length; x++)
+                    if (msg.includes(incomingMsg.msg[i].words[x])) {
+                        obj = incomingMsg.msg[i];
+                        break exit_loops;
+                    }
 
             // get random response
+            if (obj == null) return;
+
             return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
         } catch (e) { throw e; }
     }
