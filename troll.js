@@ -28,9 +28,9 @@ var incomingMsg = {
                 "toca de aca, con giles no hablo",
                 "que queres salame? No molestes",
                 "otra vez vos gil? Que parte de no molestar no entendes?",
-                "que pasó? Me estaba garchando a tu vieja y me cortaste el polvaso",
+                "que pasï¿½? Me estaba garchando a tu vieja y me cortaste el polvaso",
                 "que? Como? Me estaba re chacoteando ameo",
-                "uhhh dejá de molestar denso",
+                "uhhh dejï¿½ de molestar denso",
                 "banca que termino de cascotear a la fede y ya te atiendo",
                 "me estan llamando para ir a plaza de mayo?",
                 "me nombras una vez mas y te rompo todo el rancho"
@@ -46,7 +46,7 @@ var incomingMsg = {
         },
         {
             words: ["gente"],
-            response: ["tu abuela me chupaba la pija mientras tu abuelo miraba... alto chaqueta tu abuelo"]
+            response: ["alto chaqueta tu abuelo..."]
         },
         {
             words: ["orto"],
@@ -58,7 +58,10 @@ var incomingMsg = {
         },
         {
             words: ["mama", "mamasita", "vieja"],
-            response: ["tu vieja me encanta..."]
+            response: [
+                "tu vieja me encanta...",
+                "ufff tu mama... "
+            ]
         },
         {
             words: ["hdp","puto","gil","salame","tarado","imbecil", ],
@@ -74,10 +77,10 @@ var incomingMsg = {
         {
             words: ["chiste"],
             response: [
-                "qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
-                "el veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
+                "quï¿½ hacen dos epilï¿½pticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
+                "el veneno de la araï¿½a mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
                 "sabe que tiene una rubia contra los forros? Los labios",
-                "una rubia acompaña a su hija al ginecólogo y este le dice, mire señora el clitoris de su hija está como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
+                "una rubia acompaï¿½a a su hija al ginecï¿½logo y este le dice, mire seï¿½ora el clitoris de su hija estï¿½ como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
                 "hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",
                 "que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio, la enciende"
             ]
@@ -96,7 +99,7 @@ var incomingMsg = {
         },
         {
             words: ["jaja"],
-            response: ["de que te reís bobo?"]
+            response: ["de que te reï¿½s bobo?"]
         },
         {
             words: ["hablar"],
