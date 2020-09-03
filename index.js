@@ -16,8 +16,6 @@ const server = http.createServer((req, res) => {
 });
 
 /* despierto a aws para obtener las variables de entorno */
-//process.env.DISCO_KEY = 'NzQxMDYxNTA2NjAyMzY5MTE1.XyyFTw.m0zbTjtZjHqnACt9drgMcI0G0k4'; // nahuel bot
-process.env.DISCO_KEY = 'NzQ3MjQ1Nzc1Mjc2MjEyMzc0.X0ME2w.A0u - xJvahFhkpDMucc4WQkrlIk4'; // local bot
 const aws = require('aws-sdk');
 let s3 = new aws.S3({ accessKeyId: process.env.DISCO_KEY });
 const token = s3.config.accessKeyId;
