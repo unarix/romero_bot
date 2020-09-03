@@ -1,10 +1,10 @@
 /* requires */
-const Discord = require('discord.js');
+const { Client, MessageAttachment } = require('discord.js');
 const mtroll = require('./troll.js'); //troll module
 const msing = require('./sing.js'); //sing module
 
 /* configs */
-const bot = new Discord.Client();
+const bot = new Client();
 const http = require('http');
 const port = process.env.PORT || 3000
 
@@ -16,23 +16,16 @@ const server = http.createServer((req, res) => {
 });
 
 /* despierto a aws para obtener las variables de entorno */
+//process.env.DISCO_KEY = 'NzQxMDYxNTA2NjAyMzY5MTE1.XyyFTw.m0zbTjtZjHqnACt9drgMcI0G0k4'; // nahuel bot
+process.env.DISCO_KEY = 'NzQ3MjQ1Nzc1Mjc2MjEyMzc0.X0ME2w.A0u - xJvahFhkpDMucc4WQkrlIk4'; // local bot
 const aws = require('aws-sdk');
-
-let s3 = new aws.S3({
-  accessKeyId: process.env.DISCO_KEY,
-});
-
-console.log("La key esta seteada a: " + s3.config.accessKeyId);
-
+let s3 = new aws.S3({ accessKeyId: process.env.DISCO_KEY });
 const token = s3.config.accessKeyId;
+console.log("La key esta seteada a: " + s3.config.accessKeyId);
+server.listen(port,() => { console.log(`Server running at port `+ port); });
 
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
-});
-
-bot.once('ready', () => {
-	console.log('El bot bardeador ya esta activo!');
-});
+/* inicializo el bot */
+bot.once('ready', () => { console.log('El bot bardeador ya esta activo!'); });
 
 /* Esta funcion pone a dormir el proceso actual por x milisegundos */
 function sleep(ms) {
@@ -49,7 +42,7 @@ bot.on('message', async message => {
         const args = message.content;//.slice(prefix.length).trim().split(' ');
         const msg = args.toLowerCase();//.shift().toLowerCase();
 
-        var cmd = msg.substring(0,5);
+        var cmd = msg.substring(0, 5);
 
         switch (cmd) {
             case "!play":

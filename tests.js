@@ -2,10 +2,13 @@
 var mtroll = require("./troll.js");
 
 // troll simple tests
+console.log(mtroll.get("jaa", "test"));
+console.log(mtroll.get("chiste", "test"));
 console.log(mtroll.get("che romero", "test"));
 console.log(mtroll.get("romero", "test"));
 console.log(mtroll.get("viernes", "test"));
 console.log(mtroll.get("abrazo", "test"));
+console.log(mtroll.get("jaa", "test"));
 
 /* sing simple tests */
 var msing = require("./sing.js");

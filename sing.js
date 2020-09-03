@@ -62,7 +62,11 @@ module.exports = {
     sing: function (name) {
         try {
             var lyric = [];
-            var song = songs.find(x => x.name == name);
+            var song = songs.find(x => x.name.toLowerCase() == name);
+
+            if (song == null)
+                throw new Error("La cancion no se encuentra en la discoteca...");
+
             // creating song
             for (var i = 0; i < song.steps.length; i++) {
                 var chorus = song.lyric.filter(x => x.chorus == song.steps[i]);

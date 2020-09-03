@@ -1,9 +1,36 @@
+const { MessageEmbed } = require('discord.js');
+const romeroimg = 'https://media.ambito.com/adjuntos/239/imagenes/037/162/0037162660.jpg';
+const gatoverdaguerimg = 'https://www.dogalize.com/wp-content/uploads/2017/09/El-gato-de-Verdaguer.jpg';
+
 var incomingMsg = {
     msg: [
         {
             words: ["hola", "buenas", "buenas noches", "holis"],
             response: [
-                "que saludas la concha de tu madre?"
+                "que saludas la concha de tu madre?",
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/vLKXLpJ.jpeg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/aErKaMr.png').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/JdIQLq1.png').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/tUifYhP.jpeg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/VXZnPd9.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/dtlcVN0.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Buenas buenas...').setColor('#0099ff').setImage('https://i.imgur.com/M5MT5qy.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Hoy se pone fuerte el CS?').setColor('#0099ff').setImage('https://media1.tenor.com/images/eb896f707cb15eaec61d462f91776a15/tenor.gif?itemid=15925559').setThumbnail(romeroimg),
+            ]
+        },
+        {
+            words: ["counter", "se juega", "juega", "sale", "cs"],
+            response: [
+                new MessageEmbed().setTitle('Hoy se pone fuerte el CS?').setColor('#0099ff').setImage('https://i.imgur.com/JczmSbE.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Olvidate, hoy se come jugando').setColor('#0099ff').setImage('https://i.imgur.com/IzvtTN5.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Paren de campear...').setColor('#0099ff').setImage('https://i.imgur.com/rHhIWXe.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('No se olviden de poner la bombucha giles').setColor('#0099ff').setImage('https://i.imgur.com/lmooQXf.png').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Decile que juegue tu rrope, vos sos un asco').setColor('#0099ff').setImage('https://i.imgur.com/mKdXQc7.jpeg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('OK, cover me').setColor('#0099ff').setImage('https://i.imgur.com/JtmB5As.jpeg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Y recuerden esto, es mucho muy importante').setColor('#0099ff').setImage('https://i.imgur.com/2FMlVFe.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Hoy sale un...').setColor('#0099ff').setImage('https://i.imgur.com/RXJR2pS.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Hoy estoy manijaaa').setColor('#0099ff').setImage('https://i.imgur.com/B0YGuM2.gif').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('El nuevo teclado de quien ya sabemos...').setColor('#0099ff').setImage('https://i.imgur.com/WuFTbKs.jpg').setThumbnail(romeroimg)
             ]
         },
         {
@@ -28,12 +55,14 @@ var incomingMsg = {
                 "toca de aca, con giles no hablo",
                 "que queres salame? No molestes",
                 "otra vez vos gil? Que parte de no molestar no entendes?",
-                "que pasó? Me estaba garchando a tu vieja y me cortaste el polvaso",
+                "que paso? Me estaba garchando a tu vieja y me cortaste el polvaso",
                 "que? Como? Me estaba re chacoteando ameo",
-                "uhhh dejá de molestar denso",
+                "uhhh deja de molestar denso",
                 "banca que termino de cascotear a la fede y ya te atiendo",
                 "me estan llamando para ir a plaza de mayo?",
-                "me nombras una vez mas y te rompo todo el rancho"
+                "me nombras una vez mas y te rompo todo el rancho",
+                new MessageEmbed().setTitle('Parace que se fue...').setColor('#0099ff').setImage('https://fotos.perfil.com/2019/07/30/mortero-recompensa-07302019-760128.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Que pasa papu? Estoy laburando').setColor('#0099ff').setImage('https://fmvillaallende.com.ar/12-2017/resize_1513681641.jpg').setThumbnail(romeroimg)
             ]
         },
         {
@@ -53,7 +82,7 @@ var incomingMsg = {
             response: ["por el orto es como le gusta a tu vieja... puto"]
         },
         {
-            words: ["cucarcha"],
+            words: ["cucaracha"],
             response: ["la cucaracha la cucaracha...ya no puede caminar, porque no tiene, porque le falta, la pata que tenes metida en el orto gil"]
         },
         {
@@ -74,13 +103,46 @@ var incomingMsg = {
         {
             words: ["chiste"],
             response: [
-                "qué hacen dos epilépticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
+                "que hacen dos epilepticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
                 "el veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
-                "sabe que tiene una rubia contra los forros? Los labios",
-                "una rubia acompaña a su hija al ginecólogo y este le dice, mire señora el clitoris de su hija está como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
+                "sabes que tiene una rubia contra los forros? Los labios",
+                "una rubia acompaña a su hija al ginecologo y este le dice, mire señora el clitoris de su hija esta como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
                 "hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",
-                "que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio, la enciende"
-            ]
+                "que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio, la enciende",
+                "un niño pregunton...agarra a su madre desprevenida y le pregunta. Mama mama como se hacen los niños? La madre sin saber que decir, finalmente le contesta, mira...papa pone una semillata en mama y la empuja con la punta de la poronga...",
+                "cual es la pelicula preferida de Michael Jackson? Querida me cogi a los niños",
+                "se abre el telon y aparece pradon metiendose una palangana en la cajeta, como se llama la obra? El DIU de la bestia",
+                "que numero de calzado utiliza un paralitico? Rodado 27!",
+                "sabes porue lo niños pobres tienen la nariz como los chanchos? De tanto mirar juguetes en las vidrieras!",
+                "como saben los ciegos que despues de cagar tienen el culo limpio? Porque los perros guias dejan de lamer...",
+                "sabes porque a Scioli lo auspicia ALBA? Porque con una sola mano alcanza...",
+                "sabes porque las mujeres tienen 4 labios? Dos para decir boludeces y otros dos para pedir perdon...",
+                "cual es el alimento mas nutritivo para la mujer? El pene! Porque tiene huevos, tiene carne, saca leche y huele a pescado...",
+                "mama porque vos sos blanca, papa negro y yo amarilla? Ay hijita, si supieras la fiesta que hubo ese dia deberias alegrarte de no ladrar!",
+                "en que se parece una mujer a una bolsa de harina? En que cuanto mas se sacude, mas polvos hecha...",
+                "en una fiesta de despedida de soltero un tipo se emborracha y tiene un accidente en su miembro con una puerta. Se lo llevan de emergencia a un hospital y un medico decide entablillarlo. Al dia siguiente, en la noche de bodas, la mujer le dice mi amor mi amor, me conserve virgen para ti, entonces el marido se destapa y le dice mira, esta sin desembalar, esta sin desembalar...",
+                "sabes porque monica lewinsky era cachetuda? Porque estaba guardando evidencias...",
+                "sabes que es peor que te violen 10 piratas? Que el capitan Garfield te meta un dedo en el orto...",
+                "sabes que hace una modelo despues de tener sexo? Se presenta...",
+                "sabes como hay que hacer para callar una modelo? Preguntarle en que esta pensando...",
+                "sabes porque se desmalla una modelo? Porque se olvido de respirar...",
+                "sabes porque usan las modelos bombachas? Para abrigarse los tobillos...",
+                "sabes que ves cuando ves una modelo a los ojos? La nuca del lado de adentro...",
+                "el marido le dice a la mujer...hacemos un 68? Y la mujer le contesta y eso que es? El marido responde, vos me la chupas y yo te debo una...",
+                "sabes que diferencia hay entre una gelatina y una frigida? En que la gelatina se mueve cuando te la comes",
+                "sabes porque las modelos tienen la cara llena de agujeritos? De comer con el tenedor",
+                "sabes cual es el refresco favorito de Monica Lewinsky? Semen-Up",
+                "un espermatozoide le dice a otro...falta mucho para llegar al ovulo? Y el otro le contesta...mira mira, recien vamos por la garganta...",
+                "sabes porque la chochina de la mujer nunca pasa de moda? Porque tiene un corte clasico...",
+                "sabes en que se parece la mafia a un 69? En que si no tenes cuidado con la lengua vas a tragar mierda...te lo aseguro",
+                "cual es la primer botella que destapa una mujer luego de las fiestas de fin de año? La botella de detergente...",
+                "que le dice caperusita roja a pinocho cuando estan haciendo un 69? Mentime pinocho menitimeaarrhghgghdncksdndjsn"
+            ],
+            type: "MessageEmbed",
+            title: "Ahi te va uno",
+            img: '',
+            thumbnail: gatoverdaguerimg,
+            color: '#FF0000'
         },
         {
             words: ["piola"],
@@ -95,8 +157,22 @@ var incomingMsg = {
             response: ["aca tengo un mapa que te lleva directo a mi chota!"]
         },
         {
-            words: ["jaja"],
-            response: ["de que te reís bobo?"]
+            words: ['jaja', 'jaa'],
+            response: [
+                "de que te reis bobo?",
+                "si si mejor reite jilguero",
+                "ufff y este salame de que se rie?",
+                "eso te parecio gracioso goma?",
+                "jaja si si muy bueno...ufff que tarado",
+                "si asi de facil tenes la risa no me quiero imaginar la cola",
+                "deja de reirte que largas un olor a nepeeee terrible",
+                "deja de sonreir salame, no ves que se ven todos los pendejos atrapados en los dientes?",
+                "me encanta cuando reis, porque tenes la misma sonrisa de tu vieja cuando vio mi chota",
+                "si si reite bien fuerte, como tu jermu cuando se la enterre",
+                new MessageEmbed().setTitle('Si sos asi bobo').setColor('#0099ff').setImage('https://i.imgur.com/jZRbgYp.jpeg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Ehh? No lo entendi...').setColor('#0099ff').setImage('https://i.imgur.com/NVgKVZG.jpg').setThumbnail(romeroimg),
+                new MessageEmbed().setTitle('Que gracioso').setColor('#0099ff').setImage('https://i.imgur.com/0WZuegt.gif').setThumbnail(romeroimg)
+            ]
         },
         {
             words: ["hablar"],
@@ -105,7 +181,7 @@ var incomingMsg = {
         {
             words: ["juega"],
             response: ["hmmm alguien tiene ganas de jugar con algo..."]
-        },
+        }
     ]
 };
 
@@ -123,10 +199,27 @@ module.exports = {
                         break exit_loops;
                     }
 
-            // get random response
+            // exit if there is no coincidence
             if (obj == null) return;
 
-            return `${author}, ${obj.response[Math.floor(Math.random() * obj.response.length)]}`;
+            // Create object from type
+            switch (obj.type) {
+                case "MessageEmbed":
+                    // getting random response
+                    var text = obj.response[Math.floor(Math.random() * obj.response.length)];
+                    obj = new MessageEmbed().setTitle(obj.title).setColor(obj.color).setDescription(text).setImage(obj.img).setThumbnail(obj.thumbnail);
+                    break;
+                default:
+                    obj = obj.response[Math.floor(Math.random() * obj.response.length)];
+                    break;
+            }
+
+            // if obj is a embed message
+            if (obj.image != null)
+                return obj;
+
+            // if the obj is a simple string
+            return `${author}, ${obj}`;
         } catch (e) { throw e; }
     }
 };
