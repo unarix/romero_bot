@@ -242,6 +242,10 @@ var incomingMsg = {
         {
             words: ["mama"],
             response: ["ufff me encanta tu mama!"]
+        },
+        {
+            words: ["bocha"],
+            response: ["chocobocha cara de pija!"]
         }
 
 
