@@ -220,7 +220,7 @@ var incomingMsg = {
             ]
         },
         {
-            words: ["json"],
+            words: ["alfred"],
             response: [
                 "de alfred solo podemos decir que es un buen tipo",
                 "alfred es un buen tipo",
