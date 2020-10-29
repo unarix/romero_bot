@@ -250,9 +250,11 @@ var incomingMsg = {
         {
             words: ["canal"],
             response: ["en el canal de Gaming esta el rock"]
+        },
+        {
+            words: ["Ya casi estoy", "Ya estoy"],
+            response: ["Apurate gorreado"]
         }
-
-
     ]
 };
 
