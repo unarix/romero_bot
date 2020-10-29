@@ -262,6 +262,10 @@ var incomingMsg = {
         {
             words: ["sale a la noche"],
             response: ["yo estoy firmeeee gorrin!!!"]
+        },
+        {
+            words: ["tremendo"],
+            response: ["tremendas son las porongas que te gustan! "]
         }
     ]
 };
