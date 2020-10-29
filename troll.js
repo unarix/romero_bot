@@ -53,14 +53,14 @@ var incomingMsg = {
             words: ["romero", "romerito", "romerin", "rome"],
             response: [
                 "toca de aca, con giles no hablo",
-                "que queres salame? No molestes",
-                "otra vez vos gil? Que parte de no molestar no entendes?",
+                "que me nombas salame? gorreado puto.",
+                "otra vez gil? No me nombres mas forro",
                 "que paso? Me estaba garchando a tu vieja y me cortaste el polvaso",
-                "que? Como? Me estaba re chacoteando ameo",
+                "que? Como? Me estaba chaqueta ameo",
                 "uhhh deja de molestar denso",
                 "banca que termino de cascotear a la fede y ya te atiendo",
-                "me estan llamando para ir a plaza de mayo?",
-                "me nombras una vez mas y te rompo todo el rancho",
+                "que hace? cuando vamos a plaza de mayo",
+                "me nombras una vez mas y te abro el orto a chotasos",
                 new MessageEmbed().setTitle('Parace que se fue...').setColor('#0099ff').setImage('https://fotos.perfil.com/2019/07/30/mortero-recompensa-07302019-760128.jpg').setThumbnail(romeroimg),
                 new MessageEmbed().setTitle('Que pasa papu? Estoy laburando').setColor('#0099ff').setImage('https://fmvillaallende.com.ar/12-2017/resize_1513681641.jpg').setThumbnail(romeroimg)
             ]
@@ -104,16 +104,16 @@ var incomingMsg = {
             words: ["chiste"],
             response: [
                 "que hacen dos epilepticos en una cabina de fotos? La fiesta de la espuma eeeeaaaahhhhh!",
-                "el veneno de la araña mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
+                "el veneno de la araï¿½a mata a la lagartija, que veneno tendra tu concha que me acalambra la pija",
                 "sabes que tiene una rubia contra los forros? Los labios",
-                "una rubia acompaña a su hija al ginecologo y este le dice, mire señora el clitoris de su hija esta como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
+                "una rubia acompaï¿½a a su hija al ginecologo y este le dice, mire seï¿½ora el clitoris de su hija esta como la tapa de una birome, y la madre le contesta, tan grande? No! Todo mordido",
                 "hasta que numero pueden contar las mujeres? Hasta el 68, porque con el 69 tienen la boca llena",
                 "que hace un judio cuando tiene frio? Se para al lado de la estufa y si tiene mucho mucho frio, la enciende",
-                "un niño pregunton...agarra a su madre desprevenida y le pregunta. Mama mama como se hacen los niños? La madre sin saber que decir, finalmente le contesta, mira...papa pone una semillata en mama y la empuja con la punta de la poronga...",
-                "cual es la pelicula preferida de Michael Jackson? Querida me cogi a los niños",
+                "un niï¿½o pregunton...agarra a su madre desprevenida y le pregunta. Mama mama como se hacen los niï¿½os? La madre sin saber que decir, finalmente le contesta, mira...papa pone una semillata en mama y la empuja con la punta de la poronga...",
+                "cual es la pelicula preferida de Michael Jackson? Querida me cogi a los niï¿½os",
                 "se abre el telon y aparece pradon metiendose una palangana en la cajeta, como se llama la obra? El DIU de la bestia",
                 "que numero de calzado utiliza un paralitico? Rodado 27!",
-                "sabes porue lo niños pobres tienen la nariz como los chanchos? De tanto mirar juguetes en las vidrieras!",
+                "sabes porue lo niï¿½os pobres tienen la nariz como los chanchos? De tanto mirar juguetes en las vidrieras!",
                 "como saben los ciegos que despues de cagar tienen el culo limpio? Porque los perros guias dejan de lamer...",
                 "sabes porque a Scioli lo auspicia ALBA? Porque con una sola mano alcanza...",
                 "sabes porque las mujeres tienen 4 labios? Dos para decir boludeces y otros dos para pedir perdon...",
@@ -135,7 +135,7 @@ var incomingMsg = {
                 "un espermatozoide le dice a otro...falta mucho para llegar al ovulo? Y el otro le contesta...mira mira, recien vamos por la garganta...",
                 "sabes porque la chochina de la mujer nunca pasa de moda? Porque tiene un corte clasico...",
                 "sabes en que se parece la mafia a un 69? En que si no tenes cuidado con la lengua vas a tragar mierda...te lo aseguro",
-                "cual es la primer botella que destapa una mujer luego de las fiestas de fin de año? La botella de detergente...",
+                "cual es la primer botella que destapa una mujer luego de las fiestas de fin de aï¿½o? La botella de detergente...",
                 "que le dice caperusita roja a pinocho cuando estan haciendo un 69? Mentime pinocho menitimeaarrhghgghdncksdndjsn"
             ],
             type: "MessageEmbed",
@@ -177,6 +177,55 @@ var incomingMsg = {
         {
             words: ["hablar"],
             response: ["habla con tu novia y preguntale cuanto me mide"]
+        },
+        {
+            words: ["necro"],
+            response: [
+                "A ese le gusta la pija!",
+                "siiii beeeebeeeeee",
+                "el nivel de necro, cada dia es mas bajo"
+            ]
+        },
+        {
+            words: ["orion"],
+            response: [
+                "alto puto es orion",
+                "que orion me compre una ram que estoy tironeando pa... ",
+                "no se puede ser mas lentooo!"
+            ]
+        },
+        {
+            words: ["panchito"],
+            response: [
+                "panchito no juega a nada... ",
+                "ese panchito tendra mucha latencia o es malo asi de por si?",
+                "panchito anda bien con los bot al 30%"
+            ]
+        },
+        {
+            words: ["eter"],
+            response: [
+                "Hay que reconocer que eter juega mejor cuando esta borracho ",
+                "es mas fÃ¡cil pegarle a eter que a los tachos",
+                "eter, comprate una ram"
+            ]
+        },
+        {
+            words: ["json"],
+            response: [
+                "json sos malisimo",
+                "json sos el peor, sos muy malo",
+                "json andate, deja de jugar, sos malisimo",
+                "json muerto, sos malisimo json, malisimo"
+            ]
+        },
+        {
+            words: ["json"],
+            response: [
+                "de alfred solo podemos decir que es un buen tipo",
+                "alfred es un buen tipo",
+                "sos un buen tipo alfred"
+            ]
         },
         {
             words: ["juega"],

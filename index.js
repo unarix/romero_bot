@@ -17,6 +17,7 @@ const server = http.createServer((req, res) => {
 
 /* despierto a aws para obtener las variables de entorno */
 const aws = require('aws-sdk');
+console.log(process.env.DISCO_KEY);
 let s3 = new aws.S3({ accessKeyId: process.env.DISCO_KEY });
 const token = s3.config.accessKeyId;
 console.log("La key esta seteada a: " + s3.config.accessKeyId);
