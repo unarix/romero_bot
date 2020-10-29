@@ -246,6 +246,10 @@ var incomingMsg = {
         {
             words: ["bocha"],
             response: ["chocobocha cara de pija!"]
+        },
+        {
+            words: ["canal"],
+            response: ["en el canal de Gaming esta el rock"]
         }
 
 
