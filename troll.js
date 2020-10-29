@@ -230,7 +230,17 @@ var incomingMsg = {
         {
             words: ["juega"],
             response: ["hmmm alguien tiene ganas de jugar con algo..."]
+        },
+        {
+            words: ["complicado"],
+            response: ["complicada esta tu cola ..."]
+        },
+        {
+            words: ["rato"],
+            response: ["ese rato terminan siendo 5 horas"]
         }
+
+
     ]
 };
 
