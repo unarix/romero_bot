@@ -238,6 +238,10 @@ var incomingMsg = {
         {
             words: ["rato"],
             response: ["ese rato terminan siendo 5 horas"]
+        },
+        {
+            words: ["mama"],
+            response: ["ufff me encanta tu mama!"]
         }
 
 
