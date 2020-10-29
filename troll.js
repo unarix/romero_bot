@@ -254,6 +254,10 @@ var incomingMsg = {
         {
             words: ["Ya casi estoy", "Ya estoy"],
             response: ["Apurate gorreado"]
+        },
+        {
+            words: ["estoy por cenar"],
+            response: ["siempre lo mismo, come en la compu forro!!!"]
         }
     ]
 };
